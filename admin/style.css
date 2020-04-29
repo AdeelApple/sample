@@ -1,0 +1,201 @@
+.cp-row{
+	min-width: 920px;
+	width: 920px;
+	margin: 0 auto;
+	overflow: auto;
+}
+.addbtn{ background-color: #00b22d; border-radius: 0; }
+.cp-padd{	padding-bottom: 100PX;	}
+.cp-row:befor,.cp-row:after{	display: table; content: none;	}
+.cp-head{	 padding: 10px;	border-bottom: 2px solid #555; width: 100%;		}
+.cp-logo{	float: left; width: 300px;	}
+.cp-logo img{	width: inherit;	}
+.cp-name{	float: left; border-bottom: 2px solid #333;	width: 500px; padding: 3px; font-size: 180%; text-align: center;	}
+.bg1{	background-color: #eee;	}
+.bg2{	background-color: #ddd;		}
+.bg3{	background-color: #eee;	}
+.bg4{	background-color: #eee;	}
+.cp-title{	padding: 5px;	}
+.cp-content{	height: auto;	width: 100%;	}
+.tbl tr:hover{ background-color: #ccc;	}
+.cp-col1{	width: 15%;	float: left;	background-color: #222;	border: 1px solid grey;	}
+.cp-col2{	width: 85%;	float: left;	background-color: #444;  border: 1px solid grey;	}
+
+
+
+.popmsg{
+	position: fixed;
+	border-radius: 2px;
+	top:50%;left:40%;
+	font-size: 100%;
+	padding: 10px;
+	background-color: #ccc;
+	text-align: center;
+	box-shadow: 3px 6px 5px #444;
+	border: 1px solid #aaa;
+	/*box-shadow: inset 0px 0px 2px #111;*/
+	color: black;
+}
+
+
+.pb-check > input[type="checkbox"] {    display: none;   }
+.pb-check > label {    width: 40px;  height: 0px;   position: relative;	cursor: pointer;}
+.pb-check > label::before {
+    content: '';
+    background: rgb(150, 150, 150);
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    width: 32px;    height: 16px;
+    top: 3px;
+    margin-top: -8px;
+    opacity: 0.5;
+    position:absolute;
+    transition: all 0.4s ease;
+}
+.pb-check > label::after {
+    content: '';
+    width: 18px;    height: 18px;
+    top: 2px;    left: 0px;
+    margin-top: -8px;
+    border-radius: 16px;
+    position: absolute;
+    background: #777;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+.pb-check > input[type="checkbox"]:checked + label::after {  left: 14px;   background: #fff; }
+
+
+
+
+.cp-s-menu ul{
+	list-style: none;
+	font-size: 80%;
+}
+.cp-s-menu ul li a{
+	padding: 3px 10px;
+	display: block;
+	position: relative;
+	color: black;
+	background-color: transparent;	
+	text-decoration: none;
+	background-color: #D8D8D8;
+	transition: all 0.5s ease;
+}
+.cp-s-menu ul li a:hover{	background-color: #9A9A9A; padding-left: 15px;	 color: white;	}
+.cp-s-menu h5{
+	padding: 5px;
+	cursor: default;
+	background-color: #BCBCBC;	
+}
+.cp-s-menu-title{	padding: 5px; background-color: #00A2AC;	border-bottom: 1px solid grey;	}
+
+.cp-body>.header{	padding: 5px; background-color: #00A2AC;	border-bottom: 1px solid grey; text-transform: lowercase;	}
+.cp-body>.title{	background-color: #bbb;	}
+.cp-body>.title_s{	background-color: #bbb;	}
+.cp-body>.header>a{	 color: black; 	transition: color 0.2s ease; }
+.cp-body>.header>a:hover{  color: #00b;	}
+
+
+.cp-contents{
+	padding: 5px;
+	background-color: #eee;
+	display: block;
+}
+.cp-contents div{	margin-bottom: 5px;	}
+
+.cp-contents table{	width: 100%;border-collapse: collapse;		}
+.cp-contents table tr{ border-bottom: 1px solid black;		}
+.cp-body .title table{  border-bottom: 2px solid #3F3F3F;	}
+.cp-body .title table td{ border-right: 1px solid #3F3F3F;	text-align: center;		}
+.title table tr td:last-of-type{ text-align: right; padding-right: 10px; border: none; color: #b11; }
+
+.cp-body .title .h-table{  border-bottom: 2px solid #3F3F3F;	}
+.cp-body .title .h-table th,.h-social th{ border-right: 1px solid #3F3F3F;	text-align: center;		}
+.title .h-table thead th:last-of-type{ text-align: right; padding-right: 10px; border: none; color: #b11; }
+
+
+.cp-body .title_s table{  border-bottom: 2px solid #3F3F3F;	}
+.cp-body .title_s table td{ border-right: 1px solid #3F3F3F;}
+
+.c-menu{		}
+
+.cp-contents tr td{	font-size: 90%;	padding: 2px; padding-left: 10px;	}
+.cp-contents table tr td:nth-child(4){	padding-left: 20px;	}
+.cp-contents tr td a{	color: black; text-decoration: none;	}
+.cp-contents tr td a:hover{	color: blue;}
+.cp-contents tr td a:hover{	color: blue; 	}
+.cp-contents tr td .cpdel:hover{	color: red; cursor: pointer;	}
+
+.cp-contents tr td input{	width: 40px; text-align: center; font-size: 90%;	}
+
+
+.cpdel:before{	content: "\f014"; font-size: 130%;	padding: 0 6px; float: right;	}
+.cpedit:before{	content: "\f013"; font-size: 130%;	padding: 0 6px; float: right;	}
+.cprank:before{	content: "\f0a9"; font-size: 130%;	 }
+
+.login-box{
+	background-color: orange;
+	width: 300px;
+	height: 200px;
+	margin: 50px auto;
+}
+.login-box h4{	 padding: 10px 85px;	}
+.login-box input{	margin: 20px auto; display: table;	}
+.login-box input:nth-child(3){	padding: 4px 40px;	}
+
+.cat-box{	padding: 100px;	margin: 0px auto;		}
+.cat-box input:nth-child(2){	padding: 0 10px;	}
+
+.upload-item label{	cursor: pointer; user-select: none;	}
+.upload-item input{ position: relative;	top: 2px;	}
+
+.ins-it-box{ width: 100%;  }
+.ins-it-box > fieldset > div > input{	width: 500px;	}
+.ins-it-box > div{ display: table; margin: 10px 0px; width: 100%;	}
+.ins-it-box span{	width: 130px; display: table; float: left;	}
+.ins-it-box textarea{	min-width: 500px; max-width: 500px;	}
+
+.vpf-opt{	margin-left: 150px;	}
+.vpf-opt > label{	width: 20%; float: left;	}
+
+.up-pic{			}
+.up-pic label{	display: table; padding: 11px		}
+.up-pic div{	width: 49%; margin: 2px; border: 1px dashed grey; float: left; padding: 5px	}
+.more-view{	display: none;	}
+
+
+.vari-box{	 overflow: auto; display: none; }
+.vari-box label{	display: table; }
+.opt-col{ border: 1px dashed grey;	float: left; width: 33%; margin: 1px; padding: 10px; 	}
+.vari-box div label input{  margin: 5px; width: auto; text-align: center;	}
+.vari-box div label input:nth-child(2){  width: 90px; 	}
+
+.cp-vr-opt{ width: 100%; margin: 5px; opacity: 0.5;}
+.cp-vr-opt input{	margin: 5px 0px; margin-left: -5px;	}
+.cp-vr-opt div{	float: left;	}
+.cp-vr-opt h2{ text-align: center;	}
+
+.vrdis{	opacity: 1;	}
+
+.add-op{	padding: 0px 10px; border: none; float: right; background-color: #ccc;  margin-top: 5px;  	}
+.add-op:hover{	background-color: #777;  	}
+.add-op:active{	background-color: #fff;  	}
+
+.submit-it{		}
+.submit-it input{	margin-left: 350px;
+	 cursor: pointer;
+	 outline: none;
+	 padding: 10px 20px;
+	 border: 2px solid #00B226;
+	 background-color: #00B226;
+	 transition: 0.3s ease;
+	}
+.submit-it input:hover{	color: white; 	 border: 2px solid #00cc26;}
+.submit-it input:active{	 box-shadow: inset 0px 0px 20px #222; 	 }
+
+
+fieldset{	padding: 10px;	}
+fieldset legend{	color: grey; font-size: 85%;	}
+
+.cp-footer{		text-align: center;	padding: 5px 0px;	}
