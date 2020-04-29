@@ -5,5 +5,5 @@
 	</div>
 </div>
 <div class="cp-row bg2">
-	<div class="row cp-title cf"><?php echo date("l \>> jS  F Y"); ?></div>
+	<div class="row cp-title cf">Today Date and Time</div>
 </div>

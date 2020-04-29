@@ -7,7 +7,7 @@ $slink = $mlink."&subcat=".$_GET['subcat'];
 <div class="cp-col2">
 	<div class="cp-body">
 		<div class="header">
-			<a href="home.php">categories</a>
+			<a href="home.php">categories</a></a>
 			<b> &gt;&gt; </b><a href="subcat.php<?php echo $mlink; ?>"><?php echo m_nm($_GET['mcat']); ?></a>
 			<b> &gt;&gt; </b><a href="itemlist.php<?php echo $slink; ?>"><?php echo s_nm($_GET['mcat'],$_GET['subcat']); ?></a>
 			<b> &gt;&gt; </b><a href="edit.php<?php echo $dlink; ?>">add new item</a>

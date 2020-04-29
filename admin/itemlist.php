@@ -11,17 +11,17 @@ $slink = $mlink."&subcat=".$_GET['subcat'];
 			<b> &gt;&gt; </b><a href="itemlist.php<?php echo $slink; ?>"><?php echo s_nm($_GET['mcat'],$_GET['subcat']); ?></a>
 		</div>
 		<div class="c-menu">
-			<a href="ins_it.php<?php echo $slink;?>"><div class="btn addbtn">Add New Item</div></a>
+			<a href="ins_it.php<?php echo $slink;?>"><div class="btn">Add New Item</div></a>
 		</div>
 		<div class="title cf">
-			<table width="100%" class="h-table">
-				<thead>
-					<th width="5%" >#</th>
-					<th width="60%">Items</th>
-					<th width="10%">Rank</th>
-					<th width="10%">Published</th>
-					<th width="15%">Delete</th>
-				</thead>
+			<table width="100%">
+				<th>
+					<td width="5%" >#</td>
+					<td width="60%">Items</td>
+					<td width="10%">Rank</td>
+					<td width="10%">Published</td>
+					<td width="15%">Delete</td>
+				</th>
 			</table>
 		</div>
 		<div class="cp-contents">
@@ -35,12 +35,12 @@ $slink = $mlink."&subcat=".$_GET['subcat'];
 					<tr>
 						<td width="5%" ><?php echo $it['id']; ?></td>
 						<td width="60%"><a href="edit.php<?php echo $slink; ?>&data=<?php echo $it['id']; ?>"><?php echo $it['name']; ?></a></td>
-						<td width="10%" align="center">
+						<td width="10%">
 							<form method="post" action="do_setrank.php<?php echo $slink; ?>">
-								<input class="rinp" type="number" name="nrank" value="<?php echo $it['rank']; ?>">
+								<input class="rinp" type="text" name="nrank" value="<?php echo $it['rank']; ?>">
 								<input type="hidden" name="orank" value="<?php echo $it['rank']; ?>">
 								<input type="hidden" name="id" value="<?php echo $it['id']; ?>">
-								<input style="width: 20px; display: none;" type="submit" value="go" />
+								<input type="submit" value="go" />
 							</form>
 						</td>
 						<td width="10%">

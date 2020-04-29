@@ -11,11 +11,12 @@
 	<script src="bootstrap/js/bootstrap.js"></script>
 	
 </head>
-<body style="color: white;">
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<body>
 	<?php $admin = 'admin/' ?>
 	<?php include $admin.'build.php'; ?>
 	<?php include 'header.php'; ?>
-	<?php if($crl) include 'carousel.php'; ?>
+	<?php include 'carousel.php'; ?>
 	<div class="container">
 		<div class="width-controller">
 			<div class="row">

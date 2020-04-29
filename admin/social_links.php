@@ -4,12 +4,12 @@
 	<div class="cp-body">
 		<div class="header">Body Home Categories</div>
 		<div class="title cf">
-			<table width="100%" class="h-social">
-				<thead>
-					<th width="4%">#</th>
-					<th width="15%">social network</th>
-					<th width="80%" >Link</th>
-				</thead>
+			<table width="100%">
+				<th>
+					<td width="4%" >#</td>
+					<td width="15%">Social Network</td>
+					<td width="80%">Link</td>
+				</th>
 			</table>
 		</div>
 		<div class="cp-contents">

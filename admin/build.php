@@ -1,12 +1,10 @@
 <?php 
 
+$conn = mysqli_connect("localhost", "root", "");
+		mysqli_select_db($conn,"sample");
 
-
-$conn = mysqli_connect("localhost", "root", "","sample");
-
-
-	$sett = mysqli_fetch_array(mysqli_query($conn,"select* from setting"));
-	$crl = $sett['slider'];
+		
+		
 	
 
 	function fill_pic($con,$tbl,$clm){
@@ -59,14 +57,6 @@ $conn = mysqli_connect("localhost", "root", "","sample");
 	}
 	function setrank(){
 	$qry = "select rank from items where mcat = ".$_GET['mcat']." and subcat= ".$_GET['subcat']. " order by rank desc limit 1";	
-		return mysqli_fetch_array(mysqli_query($GLOBALS['conn'],$qry))[0]+1;			
-	}
-	function setrank1($tbl){
-	$qry = "select rank from ".$tbl." order by rank desc limit 1";	
-		return mysqli_fetch_array(mysqli_query($GLOBALS['conn'],$qry))[0]+1;			
-	}
-	function lastrank($tbl){
-	$qry = "select rank from ".$tbl." order by rank desc limit 1";	
 		return mysqli_fetch_array(mysqli_query($GLOBALS['conn'],$qry))[0]+1;			
 	}
 

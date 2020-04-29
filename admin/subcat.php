@@ -11,14 +11,14 @@ $mlink = "?mcat=".$_GET['mcat'];
 			<a href="ins_sub_cat.php<?php echo $mlink; ?>"><div class="btn">New Sub-Catagorie</div></a>
 		</div>
 		<div class="title cf">
-			<table width="100%" class="h-table">
-				<thead>
-					<th width="5%" >#</th>
-					<th width="60%">Sub Categories</th>
-					<th width="10%">Rank</th>
-					<th width="10%">Published</th>
-					<th width="15%">Delete</th>
-				</thead>
+			<table width="100%">
+				<tr>
+					<td width="5%" >#</td>
+					<td width="60%">Sub Categories</td>
+					<td width="10%">Rank</td>
+					<td width="10%">Published</td>
+					<td width="15%">Delete</td>
+				</tr>
 			</table>
 		</div>
 		<div class="cp-contents">

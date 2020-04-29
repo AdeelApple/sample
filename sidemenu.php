@@ -24,7 +24,7 @@
 		<div class="subs-in cf">
 			<form action="subs.php" method="POST">
 				Get updated with our latest news and info...<br>
-				<input type="text" name="sub_email" placeholder=" Your Email" class="subs-inp">
+				<input type="text" name="sub_email" class="subs-inp">
 				<input type="submit" class="btn btn-yes subs-btn">
 			</form>
 		</div>

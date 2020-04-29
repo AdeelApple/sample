@@ -12,6 +12,7 @@
 	<script src="../bootstrap/js/jquery-3.1.1.min.js"></script>
 	<script src="../bootstrap/js/bootstrap.min.js"></script>
 </head>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <body>
 <?php $admin = "admin/"; ?>
 <?php include 'build.php'; ?>

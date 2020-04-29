@@ -1,22 +1,18 @@
-
-<?php $crls=mysqli_query($conn, "select* from slider where visible=1 order by rank"); $sz=mysqli_num_rows($crls);
-if ($sz){ ?>
 <div class="container">
   <div class="width-controller">
     <div class="row">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
        <!-- Indicators -->
        <ol class="carousel-indicators">
-         <?php  for($i=0; $i<$sz;$i++){  ?>
-         <li data-target="#myCarousel" data-slide-to="<?php echo $i; ?>" <?php if($i==0)echo "class='active'"; ?>></li>
-         <?php } ?>
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
        </ol>
        
        <!-- Wrapper for slides -->
        <div class="carousel-inner" role="listbox">
-         <?php $i=0; while($sl=mysqli_fetch_array($crls)){ ?>
-         <div class="item <?php if($i==0) echo 'active' ?>"><img src="<?php echo $admin.$sl['address']; ?>"></div>
-         <?php $i++; } ?>  
+        
+         <div class="item active"><img src="images\slider\(1).jpg"></div>
+         <div class="item"><img src="images\slider\(2).jpg"></div>    
        </div>
        
        <!-- Left and right controls -->
@@ -30,4 +26,3 @@ if ($sz){ ?>
    </div>
  </div>
 </div>
-<?php } ?>

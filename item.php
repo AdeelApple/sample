@@ -5,7 +5,7 @@
 							<div class="itemhead">Items</div>
 
 							<?php 
-							$qry = "select* from items where mcat = '".$_GET['mcat']."' and subcat = '".$_GET['subcat']."' and visible = 1 order by rank";
+							$qry = "select* from items where mcat = '".$_GET['mcat']."' and subcat = '".$_GET['subcat']."' and visible = 1";
 					 		if($db_item_rs = mysqli_query($conn,$qry)){}
 
 							while($dr = mysqli_fetch_array($db_item_rs)){ $pic = $admin.$dr['pic']; ?>

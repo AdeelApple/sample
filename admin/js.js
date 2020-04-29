@@ -4,13 +4,12 @@
 		popmsg(tem);
 		sessionStorage.removeItem('msg');
 	}
-    function popmsg(msg,tm)
-    { 
-    if (tm===undefined)   tm=2000;
+    function popmsg(msg)
+    {
      var el = document.createElement("div");
      el.setAttribute("class","popmsg");
      el.innerHTML = msg;
-     setTimeout(function(){$(el).fadeOut(900, function() { $(this).remove(); })},tm);
+     setTimeout(function(){$(el).fadeOut(900, function() { $(this).remove(); })},5500);
      document.body.appendChild(el);
 
     }
@@ -27,16 +26,18 @@
 
 
     function del_item(obj,tid,ttbl,tmsg,tfun){       
-        $.post('ins1.php',{id:tid,tbl:ttbl,msg:tmsg,fun:tfun},function(msg){ popmsg(msg); $(obj).parents().eq(1).hide(); });     
+        $.post('ins.php',{id:tid,tbl:ttbl,msg:tmsg,fun:tfun},function(msg){ popmsg(msg); $(obj).parents().eq(1).hide(); });     
     }
-    
+    function del_mcat(obj,tid,ttbl,tmsg,tfun){       
+        $.post('ins.php',{id:tid,tbl:ttbl,msg:tmsg,fun:tfun},function(msg){ popmsg(msg); $(obj).parents().eq(1).hide(); });     
+    }
+    function del_mcat(obj,tid,ttbl,tmsg,tfun){    	
+    	$.post('ins.php',{id:tid,tbl:ttbl,msg:tmsg,fun:tfun},function(msg){ popmsg(msg); $(obj).parents().eq(1).hide();	});    	
+    }
+
     function pb_slide(obj,ttbl,tmsg){
         var ans = obj.checked ? '1':'0';
         $.post('ins.php',{id:obj.id,tbl:ttbl,mcat:'',subcat:'',msg:tmsg,val:ans,fun:'pub'},function(msg){ popmsg(msg); });
-    }
-    function set_bit(obj,ttbl,tid,tmsg){
-        var ans = obj.checked ? '1':'0';
-        $.post('ins1.php',{id:tid,tbl:ttbl,msg:tmsg,val:ans,fun:'set_bit'},function(msg){ popmsg(msg); });
     }
 
     

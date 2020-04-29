@@ -53,11 +53,11 @@
 </div>
 <div class="iconpanel">
 	<div id="iconbar" class="iconbar">
-		<a href="http://www.facebook.com" 	target="blank" class="fa facebook"></a>
-		<a href="http://www.twitter.com" 	target="blank" class="fa twitter"></a>
-		<a href="http://www.google.com" 	target="blank" class="fa google1"></a>
-		<a href="http://www.linkedin.com" 	target="blank" class="fa linkedin"></a>
-		<a href="http://www.instagram.com" target="blank" class="fa instagram"></a>
+		<a href="#" class="fa facebook"></a>
+		<a href="#" class="fa twitter"></a>
+		<a href="#" class="fa google1"></a>
+		<a href="#" class="fa linkedin"></a>
+		<a href="#" class="fa instagram"></a>
 	</div>
 	<div id="sicon" class="sicon">		
 		<span class="glyphicon glyphicon-chevron-right"></span>		

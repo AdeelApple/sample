@@ -12,15 +12,16 @@ if($_POST['fun']=='del_it')		del_items($conn,$id,$mcat,$subcat,0,$msg);
 if($_POST['fun']=='del_mcat')	del_mcat($conn,$id,$mcat,$subcat,0,$msg);
 if($_POST['fun']=='del_subcat')	del_subcat($conn,$id,$mcat,$subcat,0,$msg);
 if($_POST['fun']=='pub')		publishing($conn,$id,$msg);
-if($_POST['fun']=='set_bit')	set_bit($conn,$id,$msg);
 
 function del_items($conn,$id,$fmcat,$fsubcat,$s,$msg){
 	$qry1 = "mcat = ".$fmcat." and subcat=".$fsubcat;
 	if ($s==2) $qry1 = "mcat = ".$fmcat;
 	$qry2 = $s?	$qry1 : "id = ".$id;
 
-	$qry = "select pic, multi, multi_pic from items where ".$qry2;
-	if ($it_del = mysqli_query($conn, $qry))
+	$qry = "select pic, multi, multi_pic from items where ";
+
+	$qry .= $qry2;
+	if ($it_del = mysqli_query($conn, $qry ))
 	{
 		while($it_data = mysqli_fetch_array($it_del))
 		{
@@ -41,8 +42,13 @@ function del_items($conn,$id,$fmcat,$fsubcat,$s,$msg){
 	}
 	if ($s==0)
 	{
-		$decqry ="update items set rank=rank-1 where mcat=".$fmcat." and subcat = ".$fsubcat." and rank > ".$_POST['rank'];
-		if(mysqli_query($conn,$decqry)){}else{ echo "rank fail"; }
+		$rnk = "select id, rank from items where mcat=".$fmcat." and subcat = ".$fsubcat." and rank > ".$_POST['rank'].";";
+		if($rank = mysqli_query($conn, $rnk)){
+			while($rk = mysqli_fetch_array($rank)){
+				mysqli_query($conn,"update items set rank=rank-1 where id=".$rk['id']);
+			}
+
+		}else{ echo "rank fail"; }
 	}
 }
 

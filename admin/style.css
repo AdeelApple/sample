@@ -4,37 +4,36 @@
 	margin: 0 auto;
 	overflow: auto;
 }
-.addbtn{ background-color: #00b22d; border-radius: 0; }
 .cp-padd{	padding-bottom: 100PX;	}
 .cp-row:befor,.cp-row:after{	display: table; content: none;	}
-.cp-head{	 padding: 10px;	border-bottom: 2px solid #555; width: 100%;		}
+.cp-head{	 padding: 10px;	border: 1px solid red; width: 100%;		}
 .cp-logo{	float: left; width: 300px;	}
 .cp-logo img{	width: inherit;	}
-.cp-name{	float: left; border-bottom: 2px solid #333;	width: 500px; padding: 3px; font-size: 180%; text-align: center;	}
-.bg1{	background-color: #eee;	}
-.bg2{	background-color: #ddd;		}
-.bg3{	background-color: #eee;	}
-.bg4{	background-color: #eee;	}
+.cp-name{	float: left; border: 2px solid red;	width: 500px; padding: 3px; font-size: 180%;	}
+.bg1{	background-color: yellow;	}
+.bg2{	background-color: lime;		}
+.bg3{	background-color: #D0D024;	}
+.bg4{	background-color: grey;	}
 .cp-title{	padding: 5px;	}
 .cp-content{	height: auto;	width: 100%;	}
 .tbl tr:hover{ background-color: #ccc;	}
-.cp-col1{	width: 15%;	float: left;	background-color: #222;	border: 1px solid grey;	}
-.cp-col2{	width: 85%;	float: left;	background-color: #444;  border: 1px solid grey;	}
+.cp-col1{	width: 15%;	float: left;	background-color: skyblue;	border: 1px solid grey;	}
+.cp-col2{	width: 85%;	float: left;	background-color: #4FB912;  border: 1px solid grey;	}
 
 
 
 .popmsg{
+	
 	position: fixed;
 	border-radius: 2px;
 	top:50%;left:40%;
 	font-size: 100%;
 	padding: 10px;
-	background-color: #ccc;
+	background-color:#ccc;
 	text-align: center;
-	box-shadow: 3px 6px 5px #444;
-	border: 1px solid #aaa;
-	/*box-shadow: inset 0px 0px 2px #111;*/
+	box-shadow: 1px 1px 4px #555;
 	color: black;
+
 }
 
 
@@ -88,18 +87,17 @@
 	cursor: default;
 	background-color: #BCBCBC;	
 }
-.cp-s-menu-title{	padding: 5px; background-color: #00A2AC;	border-bottom: 1px solid grey;	}
+.cp-s-menu-title{	padding: 5px; background-color: #A2EDFF;	border-bottom: 1px solid grey;	}
 
-.cp-body>.header{	padding: 5px; background-color: #00A2AC;	border-bottom: 1px solid grey; text-transform: lowercase;	}
-.cp-body>.title{	background-color: #bbb;	}
-.cp-body>.title_s{	background-color: #bbb;	}
+.cp-body>.header{	padding: 5px; background-color: #A2EDFF;	border-bottom: 1px solid grey; 	}
+.cp-body>.title{	background-color: #70D9E9;	}
 .cp-body>.header>a{	 color: black; 	transition: color 0.2s ease; }
 .cp-body>.header>a:hover{  color: #00b;	}
 
 
 .cp-contents{
 	padding: 5px;
-	background-color: #eee;
+	background-color: #A2EDFF;
 	display: block;
 }
 .cp-contents div{	margin-bottom: 5px;	}
@@ -109,14 +107,6 @@
 .cp-body .title table{  border-bottom: 2px solid #3F3F3F;	}
 .cp-body .title table td{ border-right: 1px solid #3F3F3F;	text-align: center;		}
 .title table tr td:last-of-type{ text-align: right; padding-right: 10px; border: none; color: #b11; }
-
-.cp-body .title .h-table{  border-bottom: 2px solid #3F3F3F;	}
-.cp-body .title .h-table th,.h-social th{ border-right: 1px solid #3F3F3F;	text-align: center;		}
-.title .h-table thead th:last-of-type{ text-align: right; padding-right: 10px; border: none; color: #b11; }
-
-
-.cp-body .title_s table{  border-bottom: 2px solid #3F3F3F;	}
-.cp-body .title_s table td{ border-right: 1px solid #3F3F3F;}
 
 .c-menu{		}
 
@@ -128,7 +118,6 @@
 .cp-contents tr td .cpdel:hover{	color: red; cursor: pointer;	}
 
 .cp-contents tr td input{	width: 40px; text-align: center; font-size: 90%;	}
-
 
 .cpdel:before{	content: "\f014"; font-size: 130%;	padding: 0 6px; float: right;	}
 .cpedit:before{	content: "\f013"; font-size: 130%;	padding: 0 6px; float: right;	}

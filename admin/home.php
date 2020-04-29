@@ -9,14 +9,14 @@
 			<a href="ins_cat.php"><div class="btn">Add New</div></a>
 		</div>
 		<div class="title cf">
-			<table width="100%"  class="h-table">
-				<thead>
-					<th width="5%" >#</th>
-					<th width="60%">Category</th>
-					<th width="10%">Rank</th>
-					<th width="10%">Published</th>
-					<th width="15%">Delete</th>
-				</thead>
+			<table width="100%">
+				<th>
+					<td width="5%" >#</td>
+					<td width="60%">Category</td>
+					<td width="10%">Rank</td>
+					<td width="10%">Published</td>
+					<td width="15%">Delete</td>
+				</th>
 			</table>
 		</div>
 		<div class="cp-contents">
@@ -44,4 +44,3 @@
 </div>
 
 <?php include 'btm.php'; ?>
-

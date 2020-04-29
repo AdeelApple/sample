@@ -24,19 +24,19 @@
 .row:after{
 	clear: both;
 }
-.cf{}
+.cf{	
+	
+}
 
 .cf:before,.cf:after{ content: ""; display: table; }
 .cf:after{  clear: both; }
-body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	}
-.top1{	background-color: rgba(150,150,150,0.4); color: #fff;	}
-.nav1{ background-color: rgba(50,50,50,0.5); }
+.top1{	background-color: #b0b0b0;	}
 .nav1 ul li{
 	position: relative;
 	float: left;
 	display: block;
 	list-style: none;
-	background-color: rgba(50,50,50,0.5);
+	background-color: #d3d3d3;
 	border-right: 1px solid grey;		
 }
 .nav1 ul a{
@@ -49,11 +49,11 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 	text-decoration: none;
 }
 .nav1 ul a:hover{ 	
-	background-color: rgba(10,10,10,0.5);
+	background-color: #a4a4a4;
 	font-weight: bold; color: white;
 }
 .nav2{	display: none;	border: 2px solid #666565; float: left;  border-radius: 5px; padding: 4px 8px;	height: 34px; margin: 3px 20px; width: 40px;	cursor: pointer;}
-.nav2 span{	background-color: #666;	 height: 2px; width: 100%; margin: 4px 0px;	 display: block;	}
+.nav2 span{	background-color: #666565;	 height: 2px; width: 100%; margin: 4px 0px;	 display: block;	}
 .nav2:hover{	background-color: #eee; box-shadow: 1px 1px 1px #808080;		}
 .nav2:active{	box-shadow: 0px 1px 5px #606060 inset;	}
 .search2{	display: none;	}
@@ -62,19 +62,19 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 	text-align: center;
 	cursor: pointer;
 	text-decoration: none; 
-	background-color: #333;
+	background-color: #0CA4F2;
 	border-style: none;
 	outline: none;
 	user-select: none;
-	color: #eee;
+	color: #303030;
 	border-radius: 5px; 
 	box-shadow: 1px 1px 4px black;
 }
-.btn-yes{	background-color: #00822d; }
+.btn-yes{	background-color: #0CC809; }
 .btn-no{	background-color: #E74C3C; }
 .btn:active{	background-color: #ff7800; outline: none; box-shadow: inset 0 1px 10px #555;	}
-.btn:hover{	background-color: #0080ff; text-decoration: none;	color: black;}
-.btn-yes:hover{	background-color: #00a22d }
+.btn:hover{	background-color: #17E2E7; text-decoration: none;	color: black;}
+.btn-yes:hover{	background-color: #19F515 }
 .btn-no:hover{	background-color: #DC0707; }
 .google{
 	width: 150px;
@@ -83,6 +83,9 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 }
 .google:before{	content: "";	}
 .col-head-1{	width: 60%;	 float: left;}
+.nav1{ background-color: #d3d3d3;
+	height: 40px;	width: 100%;
+}
 .search{
 
 	float: right;
@@ -120,8 +123,8 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 .cart-menu a{	padding: 2px 15px !important; padding-top: 9px !important;	}
 .cart-menu span{	font-size: 1.8em;	}
 
-.col1{	width: 25%; float: left;	}
-.col2{	width: 75%; float: left;	}
+.col1{	width: 25%; float: left; background-color: yellow;	}
+.col2{	width: 75%; float: left; background-color: #DDDD00;	}
 
 
 
@@ -130,11 +133,9 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 .startmenu{
 	overflow: hidden;
 	font-weight: bold;
-	border-radius: 10px;
-	background-color: rgba(20,20,20, 0.5);
+	background-color: #b3b3b3;
 	font-size: 150%;
 	padding: 8px;
-	color: white;
 	cursor: default;
 }
 .side-menu{
@@ -150,7 +151,7 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 	display: block;
 	text-align: left;
 	overflow: hidden;
-	font-size: 110%;
+	font-size: 120%;
 	margin-top: 4px;
 	padding: 10px 15px;
 	width: 95%;
@@ -161,7 +162,7 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 .submenu{
 	position: relative;
 	display: none;
-	background-color: rgba(50,50,50,.8);
+	background-color: #D3FFF6;
 	margin-bottom: 2px;
 	width: 90%;
 	margin-left: 2%;
@@ -170,12 +171,10 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 	
 }
 
-.submenu ul li{	padding: 4px 10px;	transition: padding-left 0.3s ease; color: #00822d;  	}
-.submenu ul li:hover{	background-color: rgba(30,30,30,1); padding-left: 20px; color: white; 	}
+.submenu ul li{	padding: 4px 10px;	transition: padding-left 0.3s ease;  	}
+.submenu ul li:hover{	background-color: #B8FFE1; padding-left: 20px;  	}
 .suboff{	display: none;	}
 .subon{		display: block;}
-
-
 
 	/*	SOCIAL ICONS 	*/
 
@@ -210,7 +209,6 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 .iconbar a:hover{	
 	color: white; width: 55px;
 	transition: width 0.2s ease;	}
-
 .sicon{
 	z-index: 6;
 	position: relative;
@@ -227,7 +225,6 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 	transition: all 0.3s ease;
 }
 .sicon:hover{	color: white; opacity: 1;	}
-.iconpanel:hover .iconbar{ margin-left: 0px; }
 
 .hidicon{	margin-left: 0px;	}
 
@@ -239,7 +236,7 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 
 
 .subs{	padding: 5%;	}
-.subs-in{	border: 2px solid grey; margin: 8px; padding: 5%; color: white;	}
+.subs-in{	border: 2px solid grey; margin: 8px; padding: 5%;	}
 .subs-inp{	width: 69%; height: 30px;	float: left;	}
 .subs-btn{	width: 30%; height: 30px;	float: left;	box-shadow: none;	border-radius: 0;	}
 .subscribed{	padding: 20px 20%	}
@@ -252,17 +249,15 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 
 
 
-.itcontain{	float: left; padding: 10px;	}
+.itcontain{	float: left; padding: 8px;	}
 .itemhead{
 	overflow: hidden;
 	cursor: default;
 	font-size: 150%;
-	border-radius: 10px;
-	background-color: rgba(20,20,20,0.5);
-	color: white;
+	background-color: #b3b3b3;
 	font-weight: bold;
 	cursor: default;
-	padding: 8px;
+	padding: 10px;
 }
 .itbody{
 	float: left;
@@ -271,23 +266,18 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 	height: 420px;
 	padding: 5px;
 	margin: 2px;
-	border: 2px solid #aaa;
-	transition: .3s ease;
-	background-color: rgba(50,50,50,0.5);
+	border: 2px solid #D5DBDB;
 }
-.itbody:hover{ border: 2px solid #00e52f;  z-index: 10;
-		transform: scale(1.02);
-		box-shadow: 0 0 10px #00e52f;
-		background-color: rgba(200,200,200, 0.4); }
-.itpic{ display: table-cell; position: relative; vertical-align: middle; z-index: 1;  width: 230px; height: 230px;	}
+.itbody:hover{ border: 2px solid #CD6155; background-color: #ccc; }
+.itpic{ display: table-cell; position: relative; vertical-align: middle; z-index: 1;  width: 230px; height: 230px; border-bottom: 1px solid grey;	}
 .itpic img{	display: block; margin: 0 auto;	max-width: 100%; max-height: 230px;	}
-.itart,.itdes{	 color: black;	}
-.itname,.itart,.itdes{ overflow: hidden; padding: 0 10%; height: 25px; line-height: 25px; border-bottom: 1px solid #888; }
-.itname{ color: green;  border-top: 1px solid grey;}
+.itname,.itart,.itdes{	border: 1px solid red;	}
+.itname,.itart,.itdes{ overflow: hidden; padding: 0 10%; height: 25px; line-height: 25px; }
+.itname{ color: blue; margin-top: 5px; }
 .itdes{	height: 65px; line-height: 20px;  }
-.itopt{	position: relative; padding: 6px;}
-.custom,.inqbasket{ padding: 5px 10px; margin: 5px 10px; display: inline-block; color: white; transition: .3s ease;	}
-.inqbasket:hover{background-color: #00b22d;}
+.itopt{	position: relative; padding: 6px; background-color: grey;	border: 1px solid blue; }
+.custom,.inqbasket{ padding: 5px 10px; margin: 5px 10px; display: inline-block;	}
+
 
 /* Details */
 
@@ -409,15 +399,15 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 
 /* FOOTER */
 
-.footer{ display: table; position: relative;	height: auto; background-color: rgba(50,50,50,0.5);	padding: 10px 8%;  border-top: 2px solid #707070;	}
-.footer>div>h4{ color: white;	}
+.footer{ display: table; position: relative;	height: auto;	padding: 10px 8%; background-color: blue; border-top: 2px solid #707070;	}
 .footer ul{		list-style: none; 	}
-.footer ul li a{	padding: 0px 2px; color: #ccc;	transition: padding-left 0.2s ease;	}
+.footer ul li a{	padding: 0px 2px; color: #222;	transition: padding-left 0.2s ease;	}
 .footer ul li a{	 text-decoration: none;	}
-.footer ul li a:hover{	padding-left: 10px; color: #00b22d;	}
+.footer ul li a:hover{	padding-left: 10px; color: #000;	}
 .footcol1,.footcol2,.footcol3,.footcol4
 {
 	color: #000;
+	border: 1px solid lime;
 	float: left;
 	padding: 15px;
 	margin: 2%;
@@ -426,7 +416,7 @@ body{	background-image: url('images/bg(5).jpg'); background-attachment: fixed; 	
 }
 
 
-.btmline{	text-align: center; padding: 15px; background-color: rgba(150,150,150,0.5); color: white;	}
+.btmline{	text-align: center; padding: 15px; background-color: #C1C1c1;	}
 
 
 

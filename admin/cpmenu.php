@@ -20,14 +20,13 @@
 		<ul>
 			<li><a href="#">Company Profile</a></li>
 			<li><a href="#">User Profile</a></li>
-			<li><a href="setting.php">Settings</a></li>
-			<li><a href="crl.php">Slider images</a></li>
 			<li><a href="social_links.php">Social Links</a></li>
 			<li><a href="#">News Letter</a></li>
 			<li><a href="#">Content Pages</a></li>
 			<li><a href="#">News and Events</a></li>
 			<li><a href="#">Subscriber List</a></li>
 			<li><a href="#">Send News letter</a></li>
+			<li><a href="#">Promotional Banner</a></li>
 		</ul>
 	</div>
 </div>
